@@ -2,7 +2,7 @@
 
 // product object to handle single product
 
-class product{
+class Product{
 
     //DB and table name
 

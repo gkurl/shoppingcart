@@ -1,41 +1,44 @@
 <?php
 //Define DB class - use private constants (could do via normal variables also)
-class db {
+class Database
+{
 //private const for PHP >= 7.1 servers
 
-/*private const DB_HOST = 'localhost';
-private const DB_NAME = 'shoppingcart';
-private const DB_USER = 'root';
-private const DB_PASSWORD = '';*/
+    /*private const DB_HOST = 'localhost';
+    private const DB_NAME = 'shoppingcart';
+    private const DB_USER = 'root';
+    private const DB_PASSWORD = '';*/
 
 //Normal private variables for PHP < 5.3
 
-private $host = 'localhost';
-private $db_name = 'shoppingcart';
-private $db_user = 'root';
-private $db_pass = '';
-public $conn;
+    private $host = 'localhost';
+    private $db_name = 'shoppingcart';
+    private $db_user = 'root';
+    private $db_pass = '';
+    public $conn;
+
 //public $conn2;
 
 
+    public function getConnection()
+    {
 
-public function getConnection()
-{
 
+        //get and connect to db
 
-            //get and connect to db
+        $this->conn = null;
 
-         $this->conn = null;
-
-            try {
-                $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->db_user, $this->db_pass);
+        try {
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->db_user, $this->db_pass);
 
         } catch (PDOException $exception) {
-                echo "Connection Error:" . $exception->getMessage();
-            }
+            echo "Connection Error:" . $exception->getMessage();
+        }
 
-            return $this->conn;
+        return $this->conn;
 
+    }
+}
 
 
        /* $this->conn = null;
@@ -54,7 +57,6 @@ public function getConnection()
         return $this->conn;
     }*/
 
-}
 
 
 //get and connect to db - PHP versions above 7.1
@@ -84,4 +86,4 @@ public function getConnection()
 }*/
 
 
-}
+
