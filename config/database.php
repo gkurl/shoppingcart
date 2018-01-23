@@ -19,7 +19,7 @@ public $conn;
 
 
 
-public function DBConnect()
+public function getConnection()
 {
 
 
