@@ -1,7 +1,8 @@
 <?php
+
 // product object to handle single product
 
-public class product{
+class product{
 
     //DB and table name
 
