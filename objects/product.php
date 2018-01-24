@@ -33,7 +33,7 @@ class Product{
             ". $this->table_name ." ORDER BY created DESC LIMIT ?, ?";
         //prepare query
 
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->conngit ->prepare($query);
 
         //bind limit clause variables
         $stmt->bindParam(1, $from_record_num, PDO::PARAM_INT);

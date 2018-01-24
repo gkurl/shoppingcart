@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d65d1c76-22bb-4c30-a13e-aa273d6adb23" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/objects/product.php" afterPath="$PROJECT_DIR$/objects/product.php" />
-      <change beforePath="$PROJECT_DIR$/products.php" afterPath="$PROJECT_DIR$/products.php" />
-    </list>
+    <list default="true" id="d65d1c76-22bb-4c30-a13e-aa273d6adb23" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +56,7 @@
       <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="198">
               <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding />
             </state>
@@ -71,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/objects/product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding>
                 <marker date="1516811778380" expanded="true" signature="546:629" ph="SELECT id, n... " />
                 <marker date="1516811778380" expanded="true" signature="546:663" ph="SELECT id, n... ${$this-&gt;table_name}" />
@@ -149,9 +145,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="2310" />
-    <option name="y" value="383" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2330" />
+    <option name="y" value="274" />
     <option name="width" value="1286" />
     <option name="height" value="815" />
   </component>
@@ -275,15 +271,15 @@
       <workItem from="1516617501887" duration="3688000" />
       <workItem from="1516626540223" duration="8070000" />
       <workItem from="1516698101440" duration="10777000" />
-      <workItem from="1516784515375" duration="8192000" />
+      <workItem from="1516784515375" duration="8308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67992000" />
+    <option name="totallyTimeSpent" value="68108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2310" y="383" width="1286" height="815" extended-state="1" />
+    <frame x="2330" y="274" width="1286" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24193548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -682,7 +678,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="198">
           <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding />
         </state>
@@ -691,7 +687,7 @@
     <entry file="file://$PROJECT_DIR$/objects/product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <marker date="1516811778380" expanded="true" signature="546:629" ph="SELECT id, n... " />
             <marker date="1516811778380" expanded="true" signature="546:663" ph="SELECT id, n... ${$this-&gt;table_name}" />
