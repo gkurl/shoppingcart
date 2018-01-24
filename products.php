@@ -14,19 +14,31 @@ $product_image = new productImage($db);
 
 $action = isset($_GET['action'])? $_GET['action'] : "";
 
-//pagination purposes - get current page number if not set default as 1.
+//for pagination
 
+$page = isset($_GET['page']) ? $_GET['page'] : 1; //pagination purposes - get current page number if not set default as 1.
+$records_per_page = 6;  //set number of records/rows per page
+$from_records_num = ($records_per_page * $page) - $records_per_page; //Calculation for query LIMIT clause
 
+//Read all products from database
+$stmt=$product->read($from_records_num, $records_per_page);
+
+//Count number of retrieved products
+
+$num = $stmt->rowCount();
 
 
 include './config/database.php';
 include_once './objects/product.php';
 include_once './objects/product_image.php';
 include_once './objects/cart_item.php';
+
 // set the page title
+
 $page_title = "Products";
 
 //page header include
+
 include './includes/layout_head.php';
 
 //main content goes here
