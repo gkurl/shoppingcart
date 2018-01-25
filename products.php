@@ -1,4 +1,9 @@
 <?php
+include './config/database.php';
+include_once './objects/product.php';
+include_once './objects/product_image.php';
+include_once './objects/cart_item.php';
+
 //connect to db
 
 $database = new Database();
@@ -27,11 +32,23 @@ $stmt=$product->read($from_records_num, $records_per_page);
 
 $num = $stmt->rowCount();
 
+//if products retrieved more than 0
 
-include './config/database.php';
-include_once './objects/product.php';
-include_once './objects/product_image.php';
-include_once './objects/cart_item.php';
+if($num>0){
+    //for paging purposes this is required
+    $page_url="products.php?";
+    $total_rows=$product->count();
+
+    //show products
+    include_once "read_products_template.php";
+}
+
+//tell user if no products displayed
+else{
+    echo "<div class='col-md-12'>";
+    echo "<div class='alert alert-danger'> No Products could be found.</div>";
+    echo "</div>";
+}
 
 // set the page title
 
