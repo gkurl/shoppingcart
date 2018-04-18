@@ -21,4 +21,7 @@ class cartItem{
     {
         $this->conn=$db;
     }
+
+    //check if item already exists in cart
+
 }

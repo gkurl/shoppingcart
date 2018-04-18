@@ -2,6 +2,7 @@
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     extract($row);
 
+
     //create the box
     echo "<div class='col-md-4 m-b-20px'>";
 
@@ -19,6 +20,10 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         echo "</div>";
 
     }
+
+    //product name
+
+    echo "<div class='product-name m-b-10px'>{$name}</div>";
 
 }
 

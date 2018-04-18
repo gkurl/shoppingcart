@@ -21,5 +21,30 @@ class productImage {
     {
         $this->conn=$db;
     }
+    //Read the first product image related to a product
+    public function readFirst(){
+
+        //Select query
+
+        $query = "SELECT id, product_id, name
+                  FROM  ". $this->table_name . " WHERE product_id = ?
+                  ORDER BY name DESC
+                  LIMIT 0, 1";
+
+        //prep query stmt
+        $stmt = $this->conn->prepare($query);
+
+        //sanitise
+        $this->id=htmlspecialchars(strip_tags($this->id));
+
+        //bind product id variable
+        $stmt->bindParam(1, $this->product_id);
+
+        //execute query
+        $stmt->execute();
+
+        //return values
+        return $stmt;
+    }
 
 }
