@@ -7,12 +7,14 @@ error_reporting(E_ALL);
 
 class getData {
 
+    private $conn;
+
     function getRow(){
 
-       $conn = new Database();
-       $dbh = $conn->getConnection();
+       $this->conn = new Database();
+       $dbh = $this->conn->getConnection();
 
-        $query = $dbh->prepare("SELECT * FROM products WHERE id = 27 LIMIT 1");
+        $query = $dbh->prepare("SELECT * FROM products");
         $query->execute();
 
 
