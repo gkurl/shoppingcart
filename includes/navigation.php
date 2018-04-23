@@ -14,8 +14,9 @@
         <div class="navbar-collapse collapse">
             <li class="nav navbar-nav">
                 <!-- if $page_title has 'Products' word in it, highlight it. -->
-                <li> <?php echo strpos($page_title,"Product")!==false ? "class='active'":""; ?></li>
+                <li <?php echo strpos($page_title,"Product")!==false ? "class='active'" :""; ?> >
                 <a href="cart.php">
+                    <!--- code for counting products in cart to go in later !-->
                     Cart <span class="badge" id="comparison-count"></span>
                 </a>
             </li>
